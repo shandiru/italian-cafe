@@ -1,6 +1,14 @@
 import React from 'react';
 
 const HeroSection = () => {
+  // Scroll to #menu section smoothly
+  const scrollToMenu = () => {
+    const menuSection = document.getElementById("menu");
+    if (menuSection) {
+      menuSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative py-20 px-4 text-center overflow-hidden">
       {/* Background Video */}
@@ -12,7 +20,7 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
         <source
-          src="/bgvideo.mp4" // Change this to your local or hosted path
+          src="/bgvideo.mp4" // Make sure this video exists in your public directory
           type="video/mp4"
         />
       </video>
@@ -25,7 +33,7 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8 flex justify-center">
           <img
-            src="/le-gemelle-logo.png" // Make sure the logo path matches your project
+            src="/le-gemelle-logo.png" // Make sure the logo is in /public
             alt="Le Gemelle Logo"
             className="rounded-full shadow-lg"
             width={200}
@@ -51,7 +59,10 @@ const HeroSection = () => {
         </div>
 
         {/* CTA Button */}
-        <button className="inline-flex items-center justify-center gap-2 px-8 py-3 text-lg font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200">
+        <button
+          onClick={scrollToMenu}
+          className="inline-flex items-center justify-center gap-2 px-8 py-3 text-lg font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
+        >
           View Our Menu
         </button>
       </div>
