@@ -44,7 +44,7 @@ const images = [
   "/cocktail-2.jpg",
   "/cocktail-3.jpg",
   "/cocktail-4.jpg",
-  "/cocktail-5.jpg",
+  
 ];
 
 const EveningCocktails = () => {
