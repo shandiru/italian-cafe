@@ -12,13 +12,18 @@ export default function VisitUsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Location */}
           <div className="flex flex-col items-center">
-            <div className="bg-emerald-100 p-4 rounded-full mb-4">
+            <a
+              href="https://maps.app.goo.gl/XZcF8fLm9UqF3sqi9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-emerald-100 p-4 rounded-full mb-4 hover:bg-emerald-200 transition"
+            >
               <FaMapMarkerAlt className="w-8 h-8 text-emerald-600" />
-            </div>
+            </a>
             <h3 className="font-semibold text-gray-800 mb-2">Location</h3>
             <p className="text-gray-600 text-center">
-              St Martin's Square<br />
-              Leicester
+              14 St Martins Square<br />
+              Leicester LE1 5DF
             </p>
           </div>
 
@@ -28,26 +33,34 @@ export default function VisitUsSection() {
               <FaClock className="w-8 h-8 text-teal-600" />
             </div>
             <h3 className="font-semibold text-gray-800 mb-2">Hours</h3>
-            <p className="text-gray-600 text-center">
-              Mon–Fri: 8am–10pm<br />
-              Sat–Sun: 9am–11pm
+            <p className="text-gray-600 text-center leading-relaxed">
+              Mon–Fri: 8:30 am–5 pm<br />
+              Fri Night: 8 pm–12 am<br />
+              Sat: 8:30 am–4:30 pm & 8 pm–12 am<br />
+              Sun: 12 am–5 pm
             </p>
           </div>
 
           {/* Phone */}
           <div className="flex flex-col items-center">
-            <div className="bg-emerald-100 p-4 rounded-full mb-4">
+            <a
+              href="tel:01163191390"
+              className="bg-emerald-100 p-4 rounded-full mb-4 hover:bg-emerald-200 transition"
+            >
               <FaPhoneAlt className="w-8 h-8 text-emerald-600" />
-            </div>
+            </a>
             <h3 className="font-semibold text-gray-800 mb-2">Phone</h3>
-            <p className="text-gray-600">+44 116 123 4567</p>
+            <p className="text-gray-600">0116 319 1390</p>
           </div>
 
           {/* Email */}
           <div className="flex flex-col items-center">
-            <div className="bg-teal-100 p-4 rounded-full mb-4">
+            <a
+              href="mailto:hello@legemelle.co.uk"
+              className="bg-teal-100 p-4 rounded-full mb-4 hover:bg-teal-200 transition"
+            >
               <FaEnvelope className="w-8 h-8 text-teal-600" />
-            </div>
+            </a>
             <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
             <p className="text-gray-600">hello@legemelle.co.uk</p>
           </div>

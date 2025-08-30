@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -11,6 +12,28 @@ const Footer = () => {
         <p className="text-gray-300 mb-4 text-lg italic">
           "Luxury without borders — café by day, cocktails by night, always unforgettable"
         </p>
+
+        {/* Social Icons */}
+        <div className="flex justify-center space-x-6 mb-6">
+          <a
+            href="https://www.instagram.com/le_gemelle_leics/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-white transition"
+            aria-label="Instagram"
+          >
+            <FaInstagram className="w-6 h-6" />
+          </a>
+          <a
+            href="https://web.facebook.com/p/Le-Gemelle-Leicester-61553350498542/?_rdc=1&_rdr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-white transition"
+            aria-label="Facebook"
+          >
+            <FaFacebookF className="w-6 h-6" />
+          </a>
+        </div>
 
         {/* Copyright */}
         <p className="text-gray-400 text-sm">
