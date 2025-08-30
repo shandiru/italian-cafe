@@ -11,28 +11,53 @@ import "swiper/css/pagination";
 const testimonials = [
   {
     quote:
-      "Love this café 😍 enjoyed a yummy ham toasties with delicious side salad and a decaf latte which was also excellent. Very reasonably priced with a friendly and relaxed atmosphere.",
-    author: "Heather Lewin",
-  },
-  {
-    quote:
-      "A cute little Italian spot offering pastries, coffees, focaccia, pizza and arancini. Has a lovely deli area inside and nice outdoor seating. Would go again!",
-    author: "Jessica Morningstar",
-  },
-  {
-    quote:
-      "Beautiful evening with friends at Le Gemelle. Italian cocktails, tapas, amazing cannoli. Great service and atmosphere. Will return!",
+      "Beautiful evening with friends at Le Gemelle. Italian cocktails, with personalised recommendations from the boss, as I'd never tried cocktails! Small snack-sized cicchetti/tapas was lovely, and the atmosphere was great. Beautiful genuine Italian cannoli too, and a small deli selection to take away, including amazing cheeses.",
     author: "Ian Maynard Smith",
   },
   {
     quote:
-      "Such a lovely little discovery today! Delicious food, great coffee and very friendly service. My toddler loved it too – we’ll be back! ☺️",
-    author: "Caitlin Alborn",
+      "What a find! Superb proper coffee and delicious amaretto and raspberry brownie which was warmed for us. Will be back to try lunch. Staff welcoming and service prompt.",
+    author: "Jonny",
   },
   {
     quote:
-      "What a find! Superb coffee and delicious brownie. Staff were welcoming and prompt. Will be back for lunch.",
-    author: "Jonny",
+      "Popped into Le Gemelle to escape the rain this evening and it was lovely! Beautiful food, excellent wine and friendly service.",
+    author: "Rebecca Cooke-Pytel",
+  },
+  {
+    quote:
+      "Wow, what a little gem! A little taste of Italy right in the heart of Leicester. Amazing food, incredible service and very reasonably priced for such high quality Italian food!",
+    author: "Karl Hardwick",
+  },
+  {
+    quote:
+      "Fabulous evening at Le Gemelle, enjoying their new cocktail bar! Ehren the Cocktail Sommelier was outstanding, selecting and creating the perfect cocktails for us based on our likes. We accompanied our cocktails with wonderful Foccacia, Cicchetti board and finished with delicious cannoli. We can’t recommend this place enough - brilliant evening out with friends!",
+    author: "Mel Sallis",
+  },
+  {
+    quote:
+      "Ate in and had toasties with the family. Best I’ve had — the Italian bread was amazing. Will definitely be visiting again soon. Thank you.",
+    author: "Carina Grimsley",
+  },
+  {
+    quote:
+      "My friend and I came for lunch and shared an antipasti platter — so nice and more than enough for both of us. Great, friendly service. Sunny day so we sat in the outside area, gave perfect relaxed holiday vibes, will definitely visit soon.",
+    author: "Lorraine Grimsley",
+  },
+  {
+    quote:
+      "I came here for lunch with my friend. I went for a vegetarian toastie and a caramel latte. The toastie was really nice and freshly made. The staff were friendly and the atmosphere in the cafe was nice and relaxing.",
+    author: "Joe Agar",
+  },
+  {
+    quote:
+      "Had a great lunch there. Delicious toasted Italian sandwich, Italian sausage roll and a couple of Morettis. Perfect. Even bought some tasty goods from the deli to take home with me.",
+    author: "Jeremy Moore",
+  },
+  {
+    quote:
+      "They are always lovely 😍, great food and great drinks 🍸 😋",
+    author: "Sibel Yasharoglu",
   },
 ];
 
