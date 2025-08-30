@@ -40,11 +40,11 @@ const features = [
 ];
 
 const images = [
-  "/images/cocktail-1.jpg",
-  "/images/cocktail-2.jpg",
-  "/images/cocktail-3.jpg",
-  "/images/cocktail-4.jpg",
-  "/images/cocktail-5.jpg",
+  "/cocktail-1.jpg",
+  "/cocktail-2.jpg",
+  "/cocktail-3.jpg",
+  "/cocktail-4.jpg",
+  "/cocktail-5.jpg",
 ];
 
 const EveningCocktails = () => {
