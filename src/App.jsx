@@ -1,28 +1,20 @@
-// App.jsx
 // src/App.jsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import HeroSection from "./components/HeroSection";
-import BrunchMenu from "./components/BrunchMenu";
-import EveningCocktails from "./components/EveningCocktails";
-import TestimonialsCarousel from "./components/TestimonialsCarousel";
-import PrivateEventForm from "./components/PrivateEventForm";
-import VisitUsSection from "./components/VisitUsSection";
-
-import Footer from "./components/Footer";
-
+import Home from "./Page/homepage"; // Correct path for your Home component
+import Mixlogoypage from "./Page/mixlogoypage";
 
 function App() {
   return (
-    <>
-    
-    <HeroSection />
-    <BrunchMenu />
-    <EveningCocktails />
-    <TestimonialsCarousel />
-    <PrivateEventForm />
-    <VisitUsSection />
-     <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/mixlogoypage" element={<Mixlogoypage />} />
+
+       
+      </Routes>
+    </Router>
   );
 }
 
