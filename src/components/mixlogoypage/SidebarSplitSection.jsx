@@ -1,61 +1,34 @@
-import React, { useEffect, useState } from "react";
-import { FaFacebookF, FaTwitter, FaEnvelope } from "react-icons/fa";
-
-const images = [
-  "/male-bartender-is-making-cocktail.jpg",
-  "/barman-is-making-cocktail-at-night-club-.jpg",
-  
-];
-
-export default function SidebarSplitSection() {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // 5 seconds
-    return () => clearInterval(interval);
-  }, []);
-
+// Hero.jsx
+export default function Hero() {
   return (
-    <section className="flex flex-col md:flex-row h-screen w-full overflow-hidden">
-      {/* Left Sidebar */}
-      <div className="w-full md:w-1/3 bg-black text-white flex flex-col justify-center items-center gap-12 px-6 py-12">
-        {["Reservations", "About Us", "Our Menu"].map((item, idx) => (
-          <div
-            key={idx}
-            className="w-full text-center border-b border-gray-800 pb-8"
-          >
-            <a
-              href="#"
-              className="text-2xl font-semibold hover:text-orange-500 transition duration-200"
-            >
-              {item}
+    <section className="relative w-full bg-black">
+      <div className="mx-auto grid max-w-[1400px] grid-cols-1 md:grid-cols-[300px_1fr_64px]">
+        {/* Left navigation */}
+        <aside className="hidden bg-black text-white md:flex md:flex-col md:justify-center">
+          <nav className="flex flex-col gap-16 px-10">
+            <a href="#" className="text-2xl font-semibold hover:text-amber-400 transition">
+              Reservations
             </a>
-          </div>
-        ))}
-      </div>
-
-      {/* Right Image Section */}
-      <div className="relative w-full md:w-2/3 h-full">
-        <img
-          src={images[currentImage]}
-          alt="Bartender"
-          className="w-full h-[300px] md:h-full object-cover transition-opacity duration-1000 ease-in-out"
-        />
-
-        {/* Floating Social Icons */}
-        <div className="hidden md:flex flex-col gap-3 fixed right-6 top-1/2 transform -translate-y-1/2 z-50">
-          {[FaFacebookF, FaTwitter, FaEnvelope].map((Icon, idx) => (
-            <a
-              key={idx}
-              href="#"
-              className="bg-orange-600 w-10 h-10 text-black rounded-sm flex items-center justify-center hover:bg-orange-500 transition"
-            >
-              <Icon size={18} />
+            <a href="#" className="text-2xl font-semibold hover:text-amber-400 transition">
+              About Us
             </a>
-          ))}
+            <a href="#" className="text-2xl font-semibold hover:text-amber-400 transition">
+              Our Menu
+            </a>
+          </nav>
+        </aside>
+
+        {/* Hero image */}
+        <div className="relative h-[70vh] md:h-[78vh]">
+          <img
+            src="/male-bartender-is-making-cocktail.jpg"
+            alt="Bartender pouring into a cocktail glass"
+            className="h-full w-full object-cover"
+          />
         </div>
+
+        {/* Right spacer column */}
+        <div className="hidden md:block"></div>
       </div>
     </section>
   );

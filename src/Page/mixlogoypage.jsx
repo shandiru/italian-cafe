@@ -19,6 +19,7 @@ import ContactFooterSection from "../components/mixlogoypage/ContactFooterSectio
 function Mixology() {
   return (
     <>
+    <Header />
     <SidebarSplitSection />
     <MixologySection />
     <HeroBartenderSection />
